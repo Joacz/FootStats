@@ -1,0 +1,32 @@
+.button {
+  padding: .5rem ;
+  color: #fff;
+  position: relative;
+  text-align: center;
+  align-content: center;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.button::after {
+  content: '';
+  width: 100%;
+  border-radius: 5px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  border: 1px solid var(--primary-color);
+  background: var(--primary-color-dimmed);
+  left: 0;
+  z-index: -1;
+  transition: all .3s;
+}
+
+.button:hover::after {
+  transform: scale(1.05);
+  background: var(--primary-color);
+}

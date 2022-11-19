@@ -2,7 +2,7 @@ import React from 'react'
 import { createBrowserRouter, Route, RouterProvider } from 'react-router-dom'
 import { Home, Login, Register, Buscar, Equipo, Liga, Partido, Partidos } from './pages'
 
-export const App = () => {
+const App = () => {
 
   const router = createBrowserRouter([
     {
@@ -43,3 +43,5 @@ export const App = () => {
     <RouterProvider router={router} />
   )
 }
+
+export default App;

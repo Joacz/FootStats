@@ -1,9 +1,14 @@
 import React from 'react'
+import {Nav} from '../components';
 
 export const Home = () => {
   return (
-    <div>
-      <h1>/Home</h1>
-    </div>
+    <main>
+      
+      <Nav>
+        
+      </Nav>
+
+    </main>
   )
 }
