@@ -1,0 +1,27 @@
+.navbar {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between !important;
+  height: 80px;
+  padding: 0 1em;
+}
+
+.nav-container {
+  width: 100%;
+  background: var(--primary-contrast);
+  top: 0;
+  left: 0;
+  position: fixed;
+}
+
+.search-bar {
+  width: 360px;
+  border: none;
+  border-radius: 100px;
+  padding: .4em;
+}
+
+.search-bar:focus {
+  outline: none;
+}
