@@ -1,32 +1,27 @@
 .button {
-  padding: .5rem ;
   color: #fff;
+  padding: .3em .5em;
+  border-radius: 3px;
   position: relative;
-  text-align: center;
-  align-content: center;
-  text-decoration: none;
+  z-index: 100;
   display: flex;
-  justify-content: center;
   align-items: center;
-}
-
-
-
-.button::after {
-  content: '';
-  width: 100%;
-  border-radius: 5px;
-  height: 100%;
-  position: absolute;
-  top: 0;
+  justify-content: center;
+  text-decoration: none;
   border: 1px solid var(--primary-color);
   background: var(--primary-color-dimmed);
-  left: 0;
-  z-index: -1;
-  transition: all .3s;
+  transition: all .2s;
 }
 
-.button:hover::after {
-  transform: scale(1.05);
-  background: var(--primary-color);
+.button a {
+  margin: 0;
+  padding: 0;
+}
+
+.button:hover {
+  background: none;
+}
+
+.button:hover a {
+  color: #fff !important;
 }

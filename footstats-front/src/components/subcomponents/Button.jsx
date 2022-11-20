@@ -3,8 +3,10 @@ import '../../assets/styles/Button.css';
 
 export const Button = (props) => {
   return (
-    <a href='/login' className='button'>
-      {props.children}
-    </a>
+    <div className='button'>
+      <a href='/login'>
+        {props.children}
+      </a>
+    </div>
   );
 };

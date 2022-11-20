@@ -1,47 +1,57 @@
-import React from 'react'
-import { createBrowserRouter, Route, RouterProvider } from 'react-router-dom'
-import { Home, Login, Register, Buscar, Equipo, Liga, Partido, Partidos } from './pages'
+import React from 'react';
+import { createBrowserRouter, Route, RouterProvider } from 'react-router-dom';
+import {
+  Home,
+  Login,
+  Register,
+  Buscar,
+  Equipo,
+  Liga,
+  Partido,
+  Partidos,
+} from './pages';
 
 const App = () => {
-
   const router = createBrowserRouter([
     {
       path: '/',
-      element: <Home />
+      element: <Home />,
     },
     {
       path: 'login',
-      element: <Login />
+      element: <Login />,
     },
     {
       path: 'register',
-      element: <Register />
+      element: <Register />,
     },
     {
       path: 'partidos',
-      element: <Partidos />
+      element: <Partidos />,
     },
     {
       path: 'equipo/:id',
-      element: <Equipo />
+      element: <Equipo />,
     },
     {
       path: 'liga/:id',
-      element: <Liga />
+      element: <Liga />,
     },
     {
       path: 'partido/:id',
-      element: <Partido />
+      element: <Partido />,
     },
     {
       path: 'buscar/:id',
-      element: <Buscar />
+      element: <Buscar />,
     },
-  ])
+  ]);
 
   return (
-    <RouterProvider router={router} />
-  )
-}
+    <div className='App'>
+      <RouterProvider router={router} />
+    </div>
+  );
+};
 
 export default App;
