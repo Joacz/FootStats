@@ -6,6 +6,7 @@ import { MenuIcon } from '@heroicons/react/outline';
 
 export const Nav = () => {
   const [responsive, setResponsive] = useState(false);
+  
   const mobileNavAnimation = () => {
     let nav = document.getElementById('nav-mb');
     if (responsive) {

@@ -4,8 +4,10 @@
   background: var(--primary-bg);
 }
 
+
 .menu-icon {
   width: 45px;
+  user-select: none;
 }
 
 .menu-icon:hover {
@@ -13,6 +15,7 @@
 }
 
 .navbar-mobile {
+  transform: translate(-100%);
   animation: animnavOpen .5s;
 }
 
