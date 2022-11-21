@@ -9,19 +9,7 @@
 }
 
 .navbar-mobile {
-  animation: animnav .5s;
-}
-
-@keyframes animnav {
-
-  0% {
-    transform: translateX(-100%);
-  }
-
-  100% {
-    transform: translateX(0);
-  }
-
+  animation: animnavOpen .5s;
 }
 
 .form-search {
