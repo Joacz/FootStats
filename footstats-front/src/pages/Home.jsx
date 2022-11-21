@@ -1,14 +1,12 @@
-import React from 'react'
-import {Nav} from '../components';
+import React from 'react';
+import { Nav } from '../components';
+import '../assets/styles/Home.css';
 
 export const Home = () => {
   return (
-    <main>
+    <main className='home'>
+      <Nav />
       
-      <Nav>
-        
-      </Nav>
-
     </main>
-  )
-}
+  );
+};

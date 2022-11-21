@@ -4,8 +4,8 @@ import { ChevronDownIcon } from '@heroicons/react/outline';
 
 export const Droplist = (props) => {
   return (
-    <div>
-      <span>{props.title}<ChevronDownIcon width={20} /></span>
+    <div className='droplist'>
+      <span className='droplist-title'>{props.title}<ChevronDownIcon className='droplist-icon' width={20} /></span>
     </div>
   )
 }
