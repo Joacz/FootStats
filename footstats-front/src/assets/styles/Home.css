@@ -90,13 +90,13 @@
   align-items: center;
   flex-direction: column;
   background: var(--secondary-color);
-  padding: 2em 5em;
   border-radius: 5px;
   gap: 1em;
   height: 600px;
   overflow-x: hidden;
   overflow-y: auto;
-  width: 100%;
+  width: 80%;
+  padding: 2em;
   box-shadow: .5em .5em 1em rgba(0, 0, 0, 0.247);
 }
 
@@ -113,7 +113,7 @@
 .leagues-container {
   overflow-x: hidden;
   overflow-y: auto;
-  width: 60%;
+  width: 80%;
   display: flex;
   justify-content: start;
   align-items: center;
@@ -126,13 +126,6 @@
   box-shadow: .5em .5em 1em rgba(0, 0, 0, 0.247);
 }
 
-.stats-container {
-  width: 70%;
-  gap: 3em;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-}
 
 .title-container p {
   font-size: 1em;
@@ -147,6 +140,15 @@
   align-items: center;
   margin: 2em 0;
   gap: 4rem;
+  flex-direction: column;
+}
+
+.stats-container {
+  width: 100%;
+  gap: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
 }
 
@@ -196,6 +198,9 @@
 }
 
 @media screen and (min-width: 600px) {
+
+
+
   .home {
     display: flex;
     padding-top: 80px;
@@ -242,7 +247,22 @@
 
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1100px) {
+  .stats-container {
+    width: 70%;
+    gap: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+  }
+
+  .games-container{
+    width: 70%;
+  }
+  .leagues-container{
+    width: 30%;
+  }
 
   .container-home {
     display: flex;
