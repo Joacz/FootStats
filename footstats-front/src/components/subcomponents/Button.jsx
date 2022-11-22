@@ -1,11 +1,11 @@
 import React from 'react';
 import '../../assets/styles/Button.css';
 
-export const Button = (props) => {
+export const Button = ( { value }, {href}) => {
   return (
     <div className='button'>
-      <a href='/login'>
-        {props.children}
+      <a href={href}>
+        {value}
       </a>
     </div>
   );

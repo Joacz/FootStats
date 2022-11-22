@@ -30,7 +30,10 @@ export const Nav = () => {
           <Droplist title='Ligas'></Droplist>
           <Droplist title='Equipos'></Droplist>
           <a href='/partidos'>Partidos</a>
-          <Button>Iniciar Sesión</Button>
+          <Button
+          value= 'Iniciar sesión'
+          href= '/login'
+          />
         </div>
       </div>
 
