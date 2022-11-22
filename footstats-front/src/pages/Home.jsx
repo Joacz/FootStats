@@ -25,7 +25,6 @@ export const Home = () => {
             content='También tenemos las estadísticas de los torneos internacionales, fechas de los partidos, resultados y más'
           />
         </div>
-
         <div className='stats-container'>
           <div className='games-container'>
             <h2>Partidos recientes:</h2>

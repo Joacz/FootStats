@@ -7,7 +7,7 @@
   font-weight: 400;
 
   /* Colors */
-  --primary-shadow: rgba(31, 32, 32, 0.507);
+  --primary-shadow: rgba(31, 32, 32, 0.308);
   --primary-color: #629955;
   --primary-bg: #F1F2F3;
   --primary-color-dimmed: #6299554a;
@@ -23,6 +23,12 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
 
 * {
