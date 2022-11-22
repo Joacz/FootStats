@@ -1,6 +1,7 @@
 .home {
   display: flex;
   padding-top: 80px;
+  padding-bottom: 5em;
 }
 
 .link {
@@ -12,6 +13,16 @@
   color: var(--primary-color-dimmed);
 }
 
+.game a {
+  padding: 10px;
+}
+
+.leagues-container,
+.games-container {
+  background: #fff;
+  border-radius: 5px;
+}
+
 .leagues {
   width: 100%;
   display: flex;
@@ -19,7 +30,6 @@
   padding: 0;
   margin-top: 0;
   align-items: center;
-  gap: 1em;
   font-size: 1.1em;
 }
 
@@ -41,6 +51,7 @@
   display: flex;
   width: 100%;
   align-items: start;
+  justify-content: space-between;
   flex-direction: column;
   width: 100%;
   gap: .5em;
@@ -89,15 +100,13 @@
   justify-content: start;
   align-items: center;
   flex-direction: column;
-  background: var(--secondary-color);
-  border-radius: 5px;
   gap: 1em;
   height: 600px;
   overflow-x: hidden;
   overflow-y: auto;
   width: 80%;
-  padding: 2em;
-  box-shadow: .5em .5em 1em rgba(0, 0, 0, 0.247);
+  padding: 2em 2em 5em 2em;
+
 }
 
 ::-webkit-scrollbar {
@@ -110,20 +119,23 @@
   border-radius: 100px;
 }
 
+.card {
+  width: 80%;
+  font-size: 1.1em;
+}
+
 .leagues-container {
   overflow-x: hidden;
   overflow-y: auto;
   width: 80%;
   display: flex;
-  justify-content: start;
+  justify-content: center;
   align-items: center;
   height: 600px;
   flex-direction: column;
-  background: var(--secondary-color);
   padding: 2em;
-  border-radius: 5px;
+  padding-top: 5em;
   gap: 1em;
-  box-shadow: .5em .5em 1em rgba(0, 0, 0, 0.247);
 }
 
 
@@ -198,12 +210,18 @@
 }
 
 @media screen and (min-width: 600px) {
-
-
+  .game a {
+    padding: 0 4em;
+  }
 
   .home {
     display: flex;
     padding-top: 80px;
+  }
+
+  .card {
+    width: 240px;
+    height: 300px;
   }
 
   .container-home {
@@ -247,9 +265,9 @@
 
 }
 
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 850px) {
   .stats-container {
-    width: 70%;
+    width: 100%;
     gap: 3em;
     display: flex;
     justify-content: center;
@@ -257,10 +275,30 @@
     flex-direction: row;
   }
 
-  .games-container{
+  .games-container {
     width: 70%;
   }
-  .leagues-container{
+
+  .leagues-container {
+    width: 30%;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .stats-container {
+    width: 80%;
+    gap: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+  }
+
+  .games-container {
+    width: 70%;
+  }
+
+  .leagues-container {
     width: 30%;
   }
 
