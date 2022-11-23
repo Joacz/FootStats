@@ -1,4 +1,342 @@
 .home {
   display: flex;
   padding-top: 80px;
+  padding-bottom: 5em;
+}
+
+.link {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+.link:hover {
+  color: var(--primary-color-dimmed);
+}
+
+.game a {
+  padding: 10px;
+}
+
+.leagues-container,
+.games-container {
+  background: #fff;
+  border-radius: 5px;
+}
+
+.leagues {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+  margin-top: 0;
+  align-items: center;
+  font-size: 1.1em;
+}
+
+.leagues a {
+  display: flex;
+  gap: .1em;
+}
+
+.arrow {
+  color: var(--primary-color);
+}
+
+.list {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  padding-inline-start: 0;
+  display: flex;
+  width: 100%;
+  align-items: start;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 100%;
+  gap: .5em;
+  padding: 0.1em;
+  list-style: none;
+}
+
+.leagues li:hover {
+  color: var(--primary-color);
+  cursor: pointer;
+  user-select: none;
+}
+
+.leagues a {
+  text-decoration: none;
+  color: black;
+}
+
+.container-home {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8em;
+}
+
+.container-home h1 {
+  margin-top: 2em;
+  font-size: 2em;
+  font-family: "DM Sans";
+  font-style: italic;
+}
+
+.title-container {
+  flex-direction: column;
+  margin: 4em 0;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.games-container {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  gap: 1em;
+  height: 600px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  width: 80%;
+  padding: 2em 2em 5em 2em;
+
+}
+
+::-webkit-scrollbar {
+  background: none;
+  width: 8px
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(167, 167, 167);
+  border-radius: 100px;
+}
+
+.card {
+  width: 80%;
+  font-size: 1.1em;
+}
+
+.leagues-container {
+  overflow-x: hidden;
+  overflow-y: auto;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  flex-direction: column;
+  padding: 2em;
+  padding-top: 5em;
+  gap: 1em;
+}
+
+
+.title-container p {
+  font-size: 1em;
+  margin: 0;
+  text-align: center;
+}
+
+.home__card-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: 2em 0;
+  gap: 4rem;
+  flex-direction: column;
+}
+
+.stats-container {
+  width: 100%;
+  gap: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 450px) {
+  .home {
+    display: flex;
+    padding-top: 80px;
+  }
+
+  .container-home {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .container-home h1 {
+    font-size: 3em;
+    font-family: "DM Sans";
+    font-style: italic;
+  }
+
+  .title-container {
+    flex-direction: column;
+    margin: 4em 0;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .title-container p {
+    font-size: 1em;
+    margin: 0;
+  }
+
+  .home__card-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 2em 0;
+    gap: 4rem;
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .game a {
+    padding: 0 4em;
+  }
+
+  .home {
+    display: flex;
+    padding-top: 80px;
+  }
+
+  .card {
+    width: 240px;
+    height: 300px;
+  }
+
+  .container-home {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .container-home h1 {
+    font-size: 3.5em;
+    font-family: "DM Sans";
+    font-style: italic;
+  }
+
+  .title-container {
+    flex-direction: column;
+    margin: 4em 0;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .title-container p {
+    font-size: 1.2em;
+    margin: 0;
+  }
+
+  .home__card-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 2em 0;
+    gap: 2rem;
+    flex-direction: row;
+  }
+
+
+}
+
+@media screen and (min-width: 850px) {
+  .stats-container {
+    width: 100%;
+    gap: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+  }
+
+  .games-container {
+    width: 70%;
+  }
+
+  .leagues-container {
+    width: 30%;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .stats-container {
+    width: 80%;
+    gap: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+  }
+
+  .games-container {
+    width: 70%;
+  }
+
+  .leagues-container {
+    width: 30%;
+  }
+
+  .container-home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .container-home h1 {
+    font-size: 4.5em;
+    font-family: "DM Sans";
+    font-style: italic;
+  }
+
+  .title-container {
+    flex-direction: column;
+    margin: 4em 0;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    line-height: 0;
+  }
+
+  .title-container p {
+    font-size: 1.4em;
+    margin: 0;
+  }
+
+  .home__card-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 2em 0;
+    flex-direction: row;
+  }
 }

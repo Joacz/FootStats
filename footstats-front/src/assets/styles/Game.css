@@ -1,0 +1,24 @@
+.game {
+  background: var(--primary-contrast);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  padding: .5em;
+  width: 100%;
+}
+
+.game a {
+  display: flex;
+  width: 100%;
+  padding: 0 5em;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  font-size: 1.1em;
+  text-decoration: none;
+}
+
+.game:hover {
+  background: rgb(48, 48, 48);
+}

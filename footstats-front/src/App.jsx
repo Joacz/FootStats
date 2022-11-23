@@ -10,8 +10,62 @@ import {
   Partido,
   Partidos,
 } from './pages';
+import { Footer } from './components';
 
 const App = () => {
+  const titles = ['Sobre nosotros', 'Sobre la página', 'Desarrolladores'];
+
+  const links = [
+    {
+      title: titles[0],
+      values: [
+        {
+          href: '/sobre-nosotros',
+          title: 'Aprende más',
+        },
+        {
+          href: '/contactar',
+          title: 'Contactar',
+        },
+        {
+          href: '(invitacion de discord)',
+          title: 'Únete al equipo',
+        },
+      ],
+    },
+    {
+      title: titles[1],
+      values: [
+        {
+          href: '/proyecto',
+          title: 'Proyecto',
+        },
+        {
+          href: 'https://github.com/Joacz/FootStats',
+          title: 'Repositorio',
+        },
+      ],
+    },
+
+    {
+      title: titles[2],
+      values: [
+        {
+          href: '/api',
+          title: 'API Pública',
+        },
+        {
+          href: 'https://github.com/',
+          title: 'Github del equipo',
+        },
+        {
+          href: '/',
+          title: 'Código fuente',
+        },
+      ],
+    },
+  ];
+
   const router = createBrowserRouter([
     {
       path: '/',
@@ -50,6 +104,7 @@ const App = () => {
   return (
     <div className='App'>
       <RouterProvider router={router} />
+      <Footer links={links} titles={titles} />
     </div>
   );
 };
