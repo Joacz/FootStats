@@ -10,7 +10,7 @@ import {
   Partido,
   Partidos,
 } from './pages';
-import { Footer } from './components';
+import { Footer, Nav } from './components';
 
 const App = () => {
   const titles = ['Sobre nosotros', 'Sobre la página', 'Desarrolladores'];
@@ -103,6 +103,7 @@ const App = () => {
 
   return (
     <div className='App'>
+      <Nav />
       <RouterProvider router={router} />
       <Footer links={links} titles={titles} />
     </div>

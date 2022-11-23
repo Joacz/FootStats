@@ -6,7 +6,7 @@ import { MenuIcon } from '@heroicons/react/outline';
 
 export const Nav = () => {
   const [responsive, setResponsive] = useState(false);
-  
+
   const mobileNavAnimation = () => {
     let nav = document.getElementById('nav-mb');
     if (responsive) {
@@ -15,7 +15,7 @@ export const Nav = () => {
       nav.style = 'transform: translate(0%)';
     }
   };
-  
+
   const handleCheck = () => {
     setResponsive(!responsive);
     mobileNavAnimation();
@@ -24,7 +24,9 @@ export const Nav = () => {
   return (
     <nav className='nav-container'>
       <div className='navbar navbar-desktop'>
-        <span className='brand'>FOOTSTATS</span>
+        <a className='brand' style={{ cursor: 'pointer' }} href='/'>
+          FOOTSTATS
+        </a>
 
         <div className='buttons'>
           <form
