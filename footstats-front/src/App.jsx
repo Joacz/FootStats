@@ -9,7 +9,10 @@ import {
   Liga,
   Partido,
   Partidos,
+  About,
+  Contact,
 } from './pages';
+import Proyecto from './pages/proyecto';
 
 const App = () => {
   const router = createBrowserRouter([
@@ -44,6 +47,18 @@ const App = () => {
     {
       path: 'buscar/:id',
       element: <Buscar />,
+    },
+    {
+      path: 'about',
+      element: <About />,
+    },
+    {
+      path: 'proyecto',
+      element: <Proyecto />,
+    },
+    {
+      path: 'contact',
+      element: <Contact />,
     },
   ]);
 
