@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import '../assets/styles/Nav.css';
 import { Button, Droplist } from '.';
 import { SearchIcon } from '@heroicons/react/outline';
@@ -6,6 +6,9 @@ import { MenuIcon } from '@heroicons/react/outline';
 
 export const Nav = () => {
   const [responsive, setResponsive] = useState(false);
+  const [lists, setLists] = useState([]);
+  // Esto solo va a trabajar con la lista num. 1
+  const [display, setDisplay] = useState(false);
 
   const mobileNavAnimation = () => {
     let nav = document.getElementById('nav-mb');
@@ -20,6 +23,106 @@ export const Nav = () => {
     setResponsive(!responsive);
     mobileNavAnimation();
   };
+
+  useEffect(() => {
+    setLists(['list-1', 'list-2']);
+  }, []);
+
+  const teamsItems = [
+    <li>
+      <a href='/equipo/{id}'>Manchester City</a>
+    </li>,
+    <li>
+      <a href='/equipo/{id}'>Manchester City</a>
+    </li>,
+    <li>
+      <a href='/equipo/{id}'>Manchester City</a>
+    </li>,
+    <li>
+      <a href='/equipo/{id}'>Manchester City</a>
+    </li>,
+    <li>
+      <a href='/equipo/{id}'>Manchester City</a>
+    </li>,
+    <li>
+      <a href='/equipo/{id}'>Manchester City</a>
+    </li>,
+    <li>
+      <a href='/equipo/{id}'>Manchester City</a>
+    </li>,
+    <li>
+      <a href='/equipo/{id}'>Manchester City</a>
+    </li>,
+    <li>
+      <a href='/equipo/{id}'>Manchester City</a>
+    </li>,
+    <li>
+      <a href='/equipo/{id}'>Manchester City</a>
+    </li>,
+    <li>
+      <a href='/equipo/{id}'>Manchester City</a>
+    </li>,
+    <li>
+      <a href='/equipo/{id}'>Manchester City</a>
+    </li>,
+    <li>
+      <a href='/equipo/{id}'>Manchester City</a>
+    </li>,
+    <li>
+      <a href='/equipo/{id}'>Manchester City</a>
+    </li>,
+  ];
+
+  const leaguesItems = [
+    <li>
+      <a href='/liga/{id}'>Premier League</a>
+    </li>,
+    <li>
+      <a href='/liga/{id}'>Premier League</a>
+    </li>,
+    <li>
+      <a href='/liga/{id}'>Premier League</a>
+    </li>,
+    <li>
+      <a href='/liga/{id}'>Premier League</a>
+    </li>,
+    <li>
+      <a href='/liga/{id}'>Premier League</a>
+    </li>,
+    <li>
+      <a href='/liga/{id}'>Premier League</a>
+    </li>,
+    <li>
+      <a href='/liga/{id}'>Premier League</a>
+    </li>,
+    <li>
+      <a href='/liga/{id}'>Premier League</a>
+    </li>,
+    <li>
+      <a href='/liga/{id}'>Premier League</a>
+    </li>,
+    <li>
+      <a href='/liga/{id}'>Premier League</a>
+    </li>,
+    <li>
+      <a href='/liga/{id}'>Premier League</a>
+    </li>,
+    <li>
+      <a href='/liga/{id}'>Premier League</a>
+    </li>,
+    <li>
+      <a href='/liga/{id}'>Premier League</a>
+    </li>,
+    <li>
+      <a href='/liga/{id}'>Premier League</a>
+    </li>,
+    <li>
+      <a href='/liga/{id}'>Premier League</a>
+    </li>,
+    <li>
+      <a href='/liga/{id}'>Premier League</a>
+    </li>,
+  ];
 
   return (
     <nav className='nav-container'>
@@ -39,8 +142,18 @@ export const Nav = () => {
             </button>
             <input type='text' name='key' id='key' className='search-bar' />
           </form>
-          <Droplist title='Ligas'></Droplist>
-          <Droplist title='Equipos'></Droplist>
+          <Droplist
+            lists={lists}
+            id={1}
+            items={leaguesItems}
+            title='Ligas'
+          ></Droplist>
+          <Droplist
+            lists={lists}
+            id={2}
+            title='Equipos'
+            items={teamsItems}
+          ></Droplist>
           <a href='/partidos'>Partidos</a>
           <Button>Iniciar Sesión</Button>
         </div>
@@ -67,9 +180,10 @@ export const Nav = () => {
             </button>
             <input type='text' name='key' id='key' className='search-bar' />
           </form>
-          <Droplist title='Ligas'></Droplist>
-          <Droplist title='Equipos'></Droplist>
+
           <a href='/partidos'>Partidos</a>
+          <a href='/ligas'>Ligas</a>
+          <a href='/equipos'>Equipos</a>
           <Button>Iniciar Sesión</Button>
         </div>
       </div>
