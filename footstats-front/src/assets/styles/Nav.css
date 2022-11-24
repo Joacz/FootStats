@@ -84,9 +84,6 @@
   margin-bottom: 1em;
 }
 
-.brand::first-letter {
-  color: var(--primary-color);
-}
 
 .buttons {
   gap: 2em;
@@ -118,7 +115,7 @@
   top: 0;
   left: 0;
   position: fixed;
-  box-shadow: .1em .1em 1em rgba(0, 0, 0, 0.559);
+  box-shadow: .1em .1em 1em var(--primary-shadow);
 }
 
 .navbar-desktop {
@@ -209,10 +206,6 @@
   .brand {
     font-size: 1.7em !important;
     margin: 0;
-  }
-
-  .brand::first-letter {
-    color: var(--primary-color);
   }
 
   .buttons {

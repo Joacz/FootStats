@@ -7,6 +7,7 @@
   font-weight: 400;
 
   /* Colors */
+  --primary-shadow: rgba(31, 32, 32, 0.308);
   --primary-color: #629955;
   --primary-bg: #F1F2F3;
   --primary-color-dimmed: #6299554a;
@@ -24,6 +25,12 @@
   -webkit-text-size-adjust: 100%;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
 * {
   font-family: 'DM Sans', sans-serif;
 }
@@ -36,8 +43,26 @@ h1,
 
 .brand {
   font-size: 1.6rem;
+  position: relative;
   font-family: 'Montserrat Subrayada', sans-serif;
+  transition: all .3s cubic-bezier(0.215, 0.610, 0.355, 1);
 }
+
+.brand::first-letter {
+  color: var(--primary-color);
+}
+
+@keyframes grow {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+
 
 .font-bold {
   font-weight: 800;
