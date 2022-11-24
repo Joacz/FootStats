@@ -28,7 +28,7 @@ const App = () => {
           title: 'Contactar',
         },
         {
-          href: '(invitacion de discord)',
+          href: 'https://discord.gg/T3DRmSF3BT',
           title: 'Únete al equipo',
         },
       ],
@@ -59,7 +59,7 @@ const App = () => {
           title: 'Github del equipo',
         },
         {
-          href: '/',
+          href: 'https://github.com/Joacz/FootStats/tree/main/footstats-front',
           title: 'Código fuente',
         },
       ],
