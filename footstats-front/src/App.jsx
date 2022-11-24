@@ -9,8 +9,11 @@ import {
   Liga,
   Partido,
   Partidos,
+  About,
+  Contact,
 } from './pages';
 import { Footer, Nav } from './components';
+import Proyecto from './pages/proyecto';
 
 const App = () => {
   const titles = ['Sobre nosotros', 'Sobre la página', 'Desarrolladores'];
@@ -98,6 +101,18 @@ const App = () => {
     {
       path: 'buscar/:id',
       element: <Buscar />,
+    },
+    {
+      path: 'about',
+      element: <About />,
+    },
+    {
+      path: 'proyecto',
+      element: <Proyecto />,
+    },
+    {
+      path: 'contact',
+      element: <Contact />,
     },
   ]);
 
