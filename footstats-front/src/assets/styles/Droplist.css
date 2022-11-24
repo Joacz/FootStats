@@ -39,7 +39,7 @@ li {
   cursor: pointer;
 }
 
-.droplist-link a:hover{
+.droplist-link a:hover {
   color: var(--primary-color) !important;
 }
 
@@ -69,7 +69,7 @@ li {
 .droplist-items ul {
   display: grid;
   grid-template-columns: 50% 2fr;
-  column-gap:1em;
+  column-gap: 1em;
   width: 100%;
 
 }
@@ -93,4 +93,19 @@ li {
   margin-top: calc(40px + 12px);
   flex-direction: row;
   padding: 1em;
+}
+
+.droplist-items {
+  z-index: -10000;
+  animation: .3s goDown;
+}
+
+@keyframes goDown {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 100%;
+  }
 }
