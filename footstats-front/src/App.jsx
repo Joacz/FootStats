@@ -9,8 +9,11 @@ import {
   Liga,
   Partido,
   Partidos,
+  About,
+  Contact,
 } from './pages';
-import { Footer } from './components';
+import { Footer, Nav } from './components';
+import Proyecto from './pages/proyecto';
 
 const App = () => {
   const titles = ['Sobre nosotros', 'Sobre la página', 'Desarrolladores'];
@@ -28,7 +31,7 @@ const App = () => {
           title: 'Contactar',
         },
         {
-          href: '(invitacion de discord)',
+          href: 'https://discord.gg/T3DRmSF3BT',
           title: 'Únete al equipo',
         },
       ],
@@ -59,7 +62,7 @@ const App = () => {
           title: 'Github del equipo',
         },
         {
-          href: '/',
+          href: 'https://github.com/Joacz/FootStats/tree/main/footstats-front',
           title: 'Código fuente',
         },
       ],
@@ -99,10 +102,23 @@ const App = () => {
       path: 'buscar/:id',
       element: <Buscar />,
     },
+    {
+      path: 'about',
+      element: <About />,
+    },
+    {
+      path: 'proyecto',
+      element: <Proyecto />,
+    },
+    {
+      path: 'contact',
+      element: <Contact />,
+    },
   ]);
 
   return (
     <div className='App'>
+      <Nav />
       <RouterProvider router={router} />
       <Footer links={links} titles={titles} />
     </div>

@@ -43,8 +43,26 @@ h1,
 
 .brand {
   font-size: 1.6rem;
+  position: relative;
   font-family: 'Montserrat Subrayada', sans-serif;
+  transition: all .3s cubic-bezier(0.215, 0.610, 0.355, 1);
 }
+
+.brand::first-letter {
+  color: var(--primary-color);
+}
+
+@keyframes grow {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+
 
 .font-bold {
   font-weight: 800;

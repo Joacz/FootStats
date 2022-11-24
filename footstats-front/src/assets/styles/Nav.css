@@ -75,6 +75,7 @@
   padding: 2em;
   height: 100%;
   gap: 1em;
+  z-index: 100;
   font-size: 1em !important;
   transition: all .3s;
 }
@@ -84,9 +85,6 @@
   margin-bottom: 1em;
 }
 
-.brand::first-letter {
-  color: var(--primary-color);
-}
 
 .buttons {
   gap: 2em;
@@ -209,10 +207,6 @@
   .brand {
     font-size: 1.7em !important;
     margin: 0;
-  }
-
-  .brand::first-letter {
-    color: var(--primary-color);
   }
 
   .buttons {

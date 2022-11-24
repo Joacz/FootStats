@@ -5,7 +5,6 @@ import '../assets/styles/Home.css';
 export const Home = () => {
   return (
     <main className='home'>
-      <Nav />
       <div className='container-home'>
         <div className='title-container'>
           <h1 className='title'>FOOTSTATS.COM</h1>
