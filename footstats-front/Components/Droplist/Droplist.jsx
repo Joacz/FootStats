@@ -2,8 +2,20 @@ import React, {useState} from 'react'
 import './Droplist.css';
 import { ChevronDownIcon } from '@heroicons/react/outline';
 
+const  = [
+  {
+    texto: 'button0',
+    href: 'https://reactnative.dev/docs/button',
+    clase: 'button0'
+  },
+  {
+    texto: 'button1',
+    href: 'https://es.fiverr.com/',
+    clase: 'button1'
+  }
+  ]
 
-export const Droplist = ( {title} ) => {
+  export const Droplist = ( {title} ) => {
 
   const [droplist, setDroplist] = useState (false);
 
