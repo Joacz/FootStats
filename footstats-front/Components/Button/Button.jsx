@@ -13,11 +13,11 @@ const listButton = [
   clase: 'button1'
 }
 ]
-const Button = ( {numButton, text} ) => {
+const Button = ( {id, title} ) => {
   return (
-    <div className = {listButton[numButton].clase}>
-      <a href = {listButton[numButton].href}>
-        {text}
+    <div className = {listButton[id].clase}>
+      <a href = {listButton[id].href}>
+      {title}
       </a>
     </div>
   );

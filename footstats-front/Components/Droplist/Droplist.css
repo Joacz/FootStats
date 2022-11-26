@@ -16,9 +16,8 @@
 
 
 
-
 .list {
-    background-color: red;
+    display: block;
 }
 
 .noList{
