@@ -8,3 +8,5 @@ export * from './partidos';
 export * from './about';
 export * from './contact';
 export * from './proyecto';
+export * from './equipos'
+export * from './ligas'
