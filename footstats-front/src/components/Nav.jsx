@@ -28,102 +28,6 @@ export const Nav = () => {
     setLists(['list-1', 'list-2']);
   }, []);
 
-  const teamsItems = [
-    <li>
-      <a href='/equipo/{id}'>Manchester City</a>
-    </li>,
-    <li>
-      <a href='/equipo/{id}'>Manchester City</a>
-    </li>,
-    <li>
-      <a href='/equipo/{id}'>Manchester City</a>
-    </li>,
-    <li>
-      <a href='/equipo/{id}'>Manchester City</a>
-    </li>,
-    <li>
-      <a href='/equipo/{id}'>Manchester City</a>
-    </li>,
-    <li>
-      <a href='/equipo/{id}'>Manchester City</a>
-    </li>,
-    <li>
-      <a href='/equipo/{id}'>Manchester City</a>
-    </li>,
-    <li>
-      <a href='/equipo/{id}'>Manchester City</a>
-    </li>,
-    <li>
-      <a href='/equipo/{id}'>Manchester City</a>
-    </li>,
-    <li>
-      <a href='/equipo/{id}'>Manchester City</a>
-    </li>,
-    <li>
-      <a href='/equipo/{id}'>Manchester City</a>
-    </li>,
-    <li>
-      <a href='/equipo/{id}'>Manchester City</a>
-    </li>,
-    <li>
-      <a href='/equipo/{id}'>Manchester City</a>
-    </li>,
-    <li>
-      <a href='/equipo/{id}'>Manchester City</a>
-    </li>,
-  ];
-
-  const leaguesItems = [
-    <li>
-      <a href='/liga/{id}'>Premier League</a>
-    </li>,
-    <li>
-      <a href='/liga/{id}'>Premier League</a>
-    </li>,
-    <li>
-      <a href='/liga/{id}'>Premier League</a>
-    </li>,
-    <li>
-      <a href='/liga/{id}'>Premier League</a>
-    </li>,
-    <li>
-      <a href='/liga/{id}'>Premier League</a>
-    </li>,
-    <li>
-      <a href='/liga/{id}'>Premier League</a>
-    </li>,
-    <li>
-      <a href='/liga/{id}'>Premier League</a>
-    </li>,
-    <li>
-      <a href='/liga/{id}'>Premier League</a>
-    </li>,
-    <li>
-      <a href='/liga/{id}'>Premier League</a>
-    </li>,
-    <li>
-      <a href='/liga/{id}'>Premier League</a>
-    </li>,
-    <li>
-      <a href='/liga/{id}'>Premier League</a>
-    </li>,
-    <li>
-      <a href='/liga/{id}'>Premier League</a>
-    </li>,
-    <li>
-      <a href='/liga/{id}'>Premier League</a>
-    </li>,
-    <li>
-      <a href='/liga/{id}'>Premier League</a>
-    </li>,
-    <li>
-      <a href='/liga/{id}'>Premier League</a>
-    </li>,
-    <li>
-      <a href='/liga/{id}'>Premier League</a>
-    </li>,
-  ];
-
   return (
     <nav className='nav-container'>
       <div className='navbar navbar-desktop'>
@@ -144,18 +48,20 @@ export const Nav = () => {
           </form>
           <Droplist
             lists={lists}
-            id={1}
-            items={leaguesItems}
+            id={0}
             title='Ligas'
           ></Droplist>
           <Droplist
             lists={lists}
-            id={2}
+            id={1}
             title='Equipos'
-            items={teamsItems}
           ></Droplist>
           <a href='/partidos'>Partidos</a>
-          <Button>Iniciar Sesión</Button>
+          <Button
+          title = 'Iniciar Sesión'
+          href = '/Login'
+          className = 'button'
+          />
         </div>
       </div>
 
@@ -184,7 +90,11 @@ export const Nav = () => {
           <a href='/partidos'>Partidos</a>
           <a href='/ligas'>Ligas</a>
           <a href='/equipos'>Equipos</a>
-          <Button>Iniciar Sesión</Button>
+          <Button
+          title = 'Iniciar Sesión'
+          href = '/Login'
+          className = 'button'
+          />
         </div>
       </div>
     </nav>
