@@ -75,6 +75,7 @@
   padding: 2em;
   height: 100%;
   gap: 1em;
+  z-index: 100;
   font-size: 1em !important;
   transition: all .3s;
 }
