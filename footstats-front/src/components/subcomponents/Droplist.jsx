@@ -14,6 +14,7 @@ export const Droplist = (props) => {
     }
     setShow(!show);
   };
+  
   return (
     <div className='droplist'>
       <span className='droplist-title' onClick={() => toggleList()}>
