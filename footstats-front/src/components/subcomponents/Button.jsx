@@ -4,7 +4,7 @@ import '../../assets/styles/Button.css';
 export const Button = (props) => {
   return (
     <div className='button'>
-      <a href='/login'>
+      <a href={props.href}>
         {props.children}
       </a>
     </div>
