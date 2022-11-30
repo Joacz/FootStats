@@ -1,12 +1,13 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import '../../assets/styles/Button.css';
 
 export const Button = (props) => {
   return (
     <div className='button'>
-      <a href='/login'>
+      <NavLink to='/login'>
         {props.children}
-      </a>
+      </NavLink>
     </div>
   );
 };

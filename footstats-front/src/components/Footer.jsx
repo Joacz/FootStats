@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { NavLink } from 'react-router-dom';
 import '../assets/styles/Footer.css';
 
 export const Footer = ({ titles, links }) => {
@@ -13,9 +14,9 @@ export const Footer = ({ titles, links }) => {
                 if (title == link.title) {
                   return link.values.map((value) => {
                     return (
-                      <a key={value.title} href={value.href}>
+                      <NavLink key={value.title} to={value.href}>
                         {value.title}
-                      </a>
+                      </NavLink>
                     );
                   });
                 }

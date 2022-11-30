@@ -3,7 +3,7 @@ import '../assets/styles/Nav.css';
 import { Button, Droplist } from '.';
 import { SearchIcon } from '@heroicons/react/outline';
 import { MenuIcon } from '@heroicons/react/outline';
-
+import { NavLink } from 'react-router-dom';
 export const Nav = () => {
   const [responsive, setResponsive] = useState(false);
   const [lists, setLists] = useState([]);
@@ -30,106 +30,106 @@ export const Nav = () => {
 
   const teamsItems = [
     <li>
-      <a href='/equipo/{id}'>Manchester City</a>
+      <NavLink to='/equipo/{id}'>Manchester City</NavLink>
     </li>,
     <li>
-      <a href='/equipo/{id}'>Manchester City</a>
+      <NavLink to='/equipo/{id}'>Manchester City</NavLink>
     </li>,
     <li>
-      <a href='/equipo/{id}'>Manchester City</a>
+      <NavLink to='/equipo/{id}'>Manchester City</NavLink>
     </li>,
     <li>
-      <a href='/equipo/{id}'>Manchester City</a>
+      <NavLink to='/equipo/{id}'>Manchester City</NavLink>
     </li>,
     <li>
-      <a href='/equipo/{id}'>Manchester City</a>
+      <NavLink to='/equipo/{id}'>Manchester City</NavLink>
     </li>,
     <li>
-      <a href='/equipo/{id}'>Manchester City</a>
+      <NavLink to='/equipo/{id}'>Manchester City</NavLink>
     </li>,
     <li>
-      <a href='/equipo/{id}'>Manchester City</a>
+      <NavLink to='/equipo/{id}'>Manchester City</NavLink>
     </li>,
     <li>
-      <a href='/equipo/{id}'>Manchester City</a>
+      <NavLink to='/equipo/{id}'>Manchester City</NavLink>
     </li>,
     <li>
-      <a href='/equipo/{id}'>Manchester City</a>
+      <NavLink to='/equipo/{id}'>Manchester City</NavLink>
     </li>,
     <li>
-      <a href='/equipo/{id}'>Manchester City</a>
+      <NavLink to='/equipo/{id}'>Manchester City</NavLink>
     </li>,
     <li>
-      <a href='/equipo/{id}'>Manchester City</a>
+      <NavLink to='/equipo/{id}'>Manchester City</NavLink>
     </li>,
     <li>
-      <a href='/equipo/{id}'>Manchester City</a>
+      <NavLink to='/equipo/{id}'>Manchester City</NavLink>
     </li>,
     <li>
-      <a href='/equipo/{id}'>Manchester City</a>
+      <NavLink to='/equipo/{id}'>Manchester City</NavLink>
     </li>,
     <li>
-      <a href='/equipo/{id}'>Manchester City</a>
+      <NavLink to='/equipo/{id}'>Manchester City</NavLink>
     </li>,
   ];
 
   const leaguesItems = [
     <li>
-      <a href='/liga/{id}'>Premier League</a>
+      <NavLink to='/liga/{id}'>Premier League</NavLink>
     </li>,
     <li>
-      <a href='/liga/{id}'>Premier League</a>
+      <NavLink to='/liga/{id}'>Premier League</NavLink>
     </li>,
     <li>
-      <a href='/liga/{id}'>Premier League</a>
+      <NavLink to='/liga/{id}'>Premier League</NavLink>
     </li>,
     <li>
-      <a href='/liga/{id}'>Premier League</a>
+      <NavLink to='/liga/{id}'>Premier League</NavLink>
     </li>,
     <li>
-      <a href='/liga/{id}'>Premier League</a>
+      <NavLink to='/liga/{id}'>Premier League</NavLink>
     </li>,
     <li>
-      <a href='/liga/{id}'>Premier League</a>
+      <NavLink to='/liga/{id}'>Premier League</NavLink>
     </li>,
     <li>
-      <a href='/liga/{id}'>Premier League</a>
+      <NavLink to='/liga/{id}'>Premier League</NavLink>
     </li>,
     <li>
-      <a href='/liga/{id}'>Premier League</a>
+      <NavLink to='/liga/{id}'>Premier League</NavLink>
     </li>,
     <li>
-      <a href='/liga/{id}'>Premier League</a>
+      <NavLink to='/liga/{id}'>Premier League</NavLink>
     </li>,
     <li>
-      <a href='/liga/{id}'>Premier League</a>
+      <NavLink to='/liga/{id}'>Premier League</NavLink>
     </li>,
     <li>
-      <a href='/liga/{id}'>Premier League</a>
+      <NavLink to='/liga/{id}'>Premier League</NavLink>
     </li>,
     <li>
-      <a href='/liga/{id}'>Premier League</a>
+      <NavLink to='/liga/{id}'>Premier League</NavLink>
     </li>,
     <li>
-      <a href='/liga/{id}'>Premier League</a>
+      <NavLink to='/liga/{id}'>Premier League</NavLink>
     </li>,
     <li>
-      <a href='/liga/{id}'>Premier League</a>
+      <NavLink to='/liga/{id}'>Premier League</NavLink>
     </li>,
     <li>
-      <a href='/liga/{id}'>Premier League</a>
+      <NavLink to='/liga/{id}'>Premier League</NavLink>
     </li>,
     <li>
-      <a href='/liga/{id}'>Premier League</a>
+      <NavLink to='/liga/{id}'>Premier League</NavLink>
     </li>,
   ];
 
   return (
     <nav className='nav-container'>
       <div className='navbar navbar-desktop'>
-        <a className='brand' style={{ cursor: 'pointer' }} href='/'>
+        <NavLink className='brand' style={{ cursor: 'pointer' }} to='/'>
           FOOTSTATS
-        </a>
+        </NavLink>
 
         <div className='buttons'>
           <form
@@ -154,7 +154,7 @@ export const Nav = () => {
             title='Equipos'
             items={teamsItems}
           ></Droplist>
-          <a href='/partidos'>Partidos</a>
+          <NavLink to='/partidos'>Partidos</NavLink>
           <Button>Iniciar Sesión</Button>
         </div>
       </div>
@@ -167,7 +167,7 @@ export const Nav = () => {
       ></MenuIcon>
 
       <div id='nav-mb' className='navbar navbar-mobile'>
-        <span className='brand'>FOOTSTATS</span>
+        <NavLink className='brand' to='/'>FOOTSTATS</NavLink>
 
         <div className='buttons'>
           <form
@@ -181,9 +181,9 @@ export const Nav = () => {
             <input type='text' name='key' id='key' className='search-bar' />
           </form>
 
-          <a href='/partidos'>Partidos</a>
-          <a href='/ligas'>Ligas</a>
-          <a href='/equipos'>Equipos</a>
+          <NavLink to='/partidos'>Partidos</NavLink>
+          <NavLink to='/ligas'>Ligas</NavLink>
+          <NavLink to='/equipos'>Equipos</NavLink>
           <Button>Iniciar Sesión</Button>
         </div>
       </div>
