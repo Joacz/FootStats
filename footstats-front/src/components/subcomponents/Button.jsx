@@ -3,7 +3,7 @@ import '../../assets/styles/Button.css';
 
 export const Button = (props) => {
   return (
-    <div className={props.className}>
+    <div className="button">
       <a href={props.href}>
         {props.title}
       </a>
